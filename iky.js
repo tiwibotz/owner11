@@ -911,7 +911,7 @@ buttons: buttons,
 ikyy.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 }
                  
-                   case 'menu':{    
+                   case 'menu2':{    
                    reply(`*MENAMPILKAN MENU...*`)         
                    let totalchat = await ikyy.chats.all()
                    let i = []
@@ -1310,7 +1310,7 @@ ikyy.relayWAMessage(res)
 break
 
 
-case 'menu2':
+case 'menu':
               groups = ikyy.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = ikyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
