@@ -1411,7 +1411,7 @@ ${petik}│◦➛ Owner : ${ownerName}
                     ikyy.sendMessage(from, { contentText: `${menu}`, footerText: `${wibu}`, buttons: [{ buttonId: `${prefix} command`, buttonText: { displayText: `⬡ LIST MENU\n\n_jika bot tidak merespon ketik ${prefix}command_` }, type: 1 },{ buttonId: `${prefix}allmenu`, buttonText: { displayText: `⬡ ALL MENU\n\n_jika bot tidak merespon ketik ${prefix}allmenu_` }, type: 1 },{ buttonId: `${prefix}sewabot`, buttonText: { displayText: `⬡ SEWA BOT\n\njika bot tidak merespon ketik ${prefix}sewabot_` }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: ikyads, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
                      break
 
-case 'menu': 
+case 'menu4': 
               
           thu = await ikyy.getStatus(`${sender.split('@')[0]}@s.whatsapp.net`, MessageType.text)
               quotes = await fetchJson(`https://api.lolhuman.xyz/api/random/quotes?apikey=${setting.lolkey}`)
@@ -1902,7 +1902,7 @@ ${petik}│◦➛ Owner :${ownerName}
 wibu = `${botName}`
            ikyy.sendMessage(from, { contentText: `${menu}`, footerText: `${wibu}`, buttons: [{ buttonId: `${prefix}sewabot`, buttonText: { displayText: `⬡ SEWA BOT\n\n_jika bot tidak merespon ketik ${prefix}sewabot_` }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: ikyads, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
           break
-case 'menu4': 
+case 'menu': 
               
           thu = await ikyy.getStatus(`${sender.split('@')[0]}@s.whatsapp.net`, MessageType.text)
               quotes = await fetchJson(`https://api.lolhuman.xyz/api/random/quotes?apikey=${setting.lolkey}`)
@@ -3820,7 +3820,11 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'sewabot':
        case 'iklan':
       gopeynya = `${setting.ppbot}`
-     teksnya = `${setting.hargaSewa}`
+     teksnya = `*list sewa bot*
+Pembayaran
+-Gopay
+💳: 087851030399
+AN: Tiwi Store`
 
               ikyy.sendMessage(from, await getBuffer(gopeynya), image, {quoted: mek, caption: teksnya, thumbnail: Buffer.alloc(0) })
               break
@@ -3837,27 +3841,6 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               reply('tag stickenya')
 }
               break
-      case 'payment':
-      reply (`PAYMENT : 💸
-
-*Gopay :*
-085960658955 ( LIFZ STORE) 
-
-*Ovo :*
-085960658955 ( NASI PUTIH )
-
-*Dana :*
-085960658955 ( LIFZ4YOU ) 
-
-*Pulsa:*
-085960658955 ( Harga Normal + 5k ) 
-
-*Bca :*
-0010751527 ( MUHAMMAD ALIEF PRATAMA ) 
-
-_*Note*_ : Salah TF / Tidak Sesuai Tujuan Nomor Diatas *NO REFFUND*
-Dan Wajib Menyertakan Bukti Tf.`)
-break
        case 'delcmd':
               if (!isPremium) return reply(`Kamu bukan user premium, kirim perintah *${prefix}buypremium* untuk membeli premium`)
               if (!isQuotedSticker) return reply(`Penggunaan : ${command} tagsticker`)
