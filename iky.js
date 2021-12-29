@@ -3820,11 +3820,15 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'sewabot':
        case 'iklan':
       gopeynya = `${setting.ppbot}`
-     teksnya = `*list sewa bot*
-Pembayaran
--Gopay
-💳: 087851030399
-AN: Tiwi Store`
+     teksnya = `
+*𝙻𝙸𝚂𝚃 𝚂𝙴𝚆𝙰 𝙱𝙾𝚃:*
+_💳𝙿𝙴𝙼𝙱𝙰𝚈𝙰𝚁𝙰𝙽 𝙼𝙴𝙻𝙰𝙻𝚄𝙸:_
+_❀𝙶𝙾𝙿𝙰𝚈_
+_❀𝙳𝙰𝙽𝙰_
+_❀𝙿𝚄𝙻𝚂𝙰 (𝙼𝙸𝙽 5𝙺)_
+_❀𝚀𝚁𝙸𝚂𝚂 𝙰𝙻𝙻 𝙿𝙰𝚈𝙼𝙴𝙽𝚃_
+
+*_⚠︎𝚄𝙽𝚃𝚄𝙺 𝙸𝙽𝙵𝙾 𝙻𝙴𝙱𝙸𝙷 𝙻𝙰𝙽𝙹𝚄𝚃 𝙷𝚄𝙱𝚄𝙽𝙶𝙸 𝙾𝚆𝙽𝙴𝚁!!_*`
 
               ikyy.sendMessage(from, await getBuffer(gopeynya), image, {quoted: mek, caption: teksnya, thumbnail: Buffer.alloc(0) })
               break
@@ -6978,5 +6982,4 @@ console.log('Message : %s', color(e, 'cyan'))
         }
 }
 }
-
 
