@@ -240,7 +240,7 @@ fetch(`http://ip-api.com/line`).then(res => res.text())
 
         .then(bu =>{
 
-       ikyy.sendMessage("6289636634511@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Owner RIFQI BOTZ",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./connect.jpg'),sourceUrl:"https://wa.me/6289636634511?text=Assalamualaikum"}}})
+       ikyy.sendMessage("0@s.whatsapp.net", `halo mark🗿`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Owner RIFQI BOTZ",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./connect.jpg'),sourceUrl:"https://wa.me/0?text=Assalamualaikum"}}})
 
      console.log(color('|INFO!|', 'yellow'), color('mengirim info bot ke owner', 'cyan'))
 
